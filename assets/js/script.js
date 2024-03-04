@@ -1,0 +1,11 @@
+function startGame() {
+
+
+
+}
+
+
+
+function answer() {
+    
+}

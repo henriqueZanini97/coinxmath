@@ -11,31 +11,60 @@
     <!-- title -->
     <title>Coin x Math</title>
     <!-- coin icon -->
-    <link rel="icon" href="" type="image/x-icon">
+    <link rel="icon" href="assets/images/coin.png" type="image/x-icon">
 </head>
 <body>
     
     <main>
-        <!-- ---------------------------(game starting screen) FRAME 1 --------------------------- -->
-        <div id="frame1">
-        </div>
+        <div class="background">
+        <div class="design">
 
-        <!-- --------------------------- (game running screen) FRAME 2 --------------------------- -->
-        <div id="frame2">
-
-            <div class="scoreboard">
+            <!-- ---------------------------(game starting screen) FRAME 1 --------------------------- -->
+            <div class="game-content" id="frame1">
+                <div id="title"> Coin x Math </div>
+                
             </div>
 
-            <div class="math">
-                <button id="btn-check" onclick="check()">CHECK</button>                    
+            <!-- --------------------------- (game running screen) FRAME 2 --------------------------- -->
+            <div class="game-content hide" id="frame2">
+
+                <div id="scoreboard" class="scoreboard">
+                    <div class="coins"></div>
+                    <div class="clock"></div>
+                    <div class="coin"></div>
+                </div>
+
+                <div class="math">
+                    <div class="problem">
+                        <div id="problem"></div>
+                        <div id="result"></div>
+                    </div>
+                    <div class="opc" id="opc">
+                        <button id="btn1" name="btn1" onclick="answer(this)"></button>
+                        <button id="btn2" name="btn2" onclick="answer(this)"></button>
+                        <button id="btn3" name="btn3" onclick="answer(this)"></button>
+    
+                        <button id="btn4" name="btn4" onclick="answer(this)"></button>
+                        <button id="btn5" name="btn5" onclick="answer(this)"></button>
+                        <button id="btn6" name="btn6" onclick="answer(this)"></button>
+                    </div>                      
+                    <button id="btn-check" onclick="check()">CHECK</button>                    
+                </div>
+
+            </div>
+
+            <!-- --------------------------- (game ending screen) FRAME 3 --------------------------- -->
+            <div class="game-content hide" id="frame3">
+                <div id="title">
+                    <div id="final_score"> </div>
+                    <div id="final_currentCoin"> </div>
+                </div>
+                <button onclick="startGame()">Try again?</button>
             </div>
 
         </div>
-
-        <!-- --------------------------- (game ending screen) FRAME 3 --------------------------- -->
-        <div id="frame3">
         </div>
     </main>
-
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

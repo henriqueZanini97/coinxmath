@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: gray;
+}
+
+/* to hide displays 1 2 3 */
+.hide {
+    display: none;
+}
+
+
+/* top container */
+.design {
+    padding: 40px;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: #192020;
+}
+
+
+/* game content */
+.game-content {
+    filter: drop-shadow(0px 0px 30px yellow);
+    border: 1px solid rgb(69, 50, 2);
+    margin: auto;
+    max-width: 500px;
+    height: 550px;
+    background-color: #402f04;
+}
