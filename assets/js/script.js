@@ -49,7 +49,7 @@ function check() {
             if(score == 0) { score = 1; } else { score++; }
             time += (maxTime-time);
             
-            currentCoin += score*27;
+            currentCoin += score*20;
 
         } else {
             //currentCoin -= score*50;
