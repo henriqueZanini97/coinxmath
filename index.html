@@ -14,28 +14,26 @@
     <link rel="icon" href="assets/images/coin.png" type="image/x-icon">
 </head>
 <body>
-
-    
     
     <main >
         <div class="background">
         <div class="design">
 
-            <!-- ---------------------------(game starting screen) FRAME 1 --------------------------- -->
+            <!-- (game starting screen) FRAME 1 -->
             <div class="game-content image" id="frame1">
-                <div id="title"> Coin x Math </div>
-                <span class="coin"> <img src="assets/images/coin.png" alt="" /> </span>
-                <button id="btn-start" onclick="startGame()">Start</button>
+                <div class="title"> Coin x Math </div>
+                <span class="coin"> <img src="assets/images/coin.png" alt="A golden coin with a dollar sing in the middle"> </span>
+                <button class="btn-start" onclick="startGame()">Start</button>
             </div>
 
-            <!-- --------------------------- (game running screen) FRAME 2 --------------------------- -->
+            <!-- (game running screen) FRAME 2 -->
             <div class="game-content hide" id="frame2">
 
                 <div id="scoreboard" class="scoreboard">
-                    <div class="coins"> <img src="assets/images/all-coins.png" alt="" /> </div>
+                    <div class="coins"> <img src="assets/images/all-coins.png" alt="A stack of golden coins with a dollar sing in the middle of each one"> </div>
                     <div class="clock" id="clock"> </div>
                     <div class="coin">
-                        <span> <img style="width: 60px" src="assets/images/coin.png" alt="" /> </span>
+                        <span> <img style="width: 60px" src="assets/images/coin.png" alt="A golden coin with a dollar sing in the middle"> </span>
                         <div id="currentCoin"> </div> 
                     </div>
                 </div>
@@ -46,28 +44,28 @@
                         <div id="result"> </div>
                     </div>
                     <div class="opc" id="opc">
-                        <button id="btn1" name="btn1" maxlength="4" onclick="optAnswer(this)"></button>
-                        <button id="btn2" name="btn2" maxlength="4" onclick="optAnswer(this)"></button>
-                        <button id="btn3" name="btn3" maxlength="4" onclick="optAnswer(this)"></button>
+                        <button id="btn1" name="btn1" onclick="optAnswer(this)"></button>
+                        <button id="btn2" name="btn2" onclick="optAnswer(this)"></button>
+                        <button id="btn3" name="btn3" onclick="optAnswer(this)"></button>
     
-                        <button id="btn4" name="btn4" maxlength="4" onclick="optAnswer(this)"></button>
-                        <button id="btn5" name="btn5" maxlength="4" onclick="optAnswer(this)"></button>
-                        <button id="btn6" name="btn6" maxlength="4" onclick="optAnswer(this)"></button>
+                        <button id="btn4" name="btn4" onclick="optAnswer(this)"></button>
+                        <button id="btn5" name="btn5" onclick="optAnswer(this)"></button>
+                        <button id="btn6" name="btn6" onclick="optAnswer(this)"></button>
                     </div>                      
                     <button id="btn-check" onclick="check()">CHECK</button>                    
                 </div>
 
             </div>
 
-            <!-- --------------------------- (game ending screen) FRAME 3 --------------------------- -->
+            <!--  (game ending screen) FRAME 3  -->
             <div class="game-content hide image" id="frame3">
-                <div id="title">
+                <div id="title" class="title">
                     Time's over!
                     <div id="final_score"> </div>
                     <div id="final_currentCoin"> </div>
                 </div>
                 <br><br><br><br><br><br><br><br><br><br><br><br><br>
-                <button id="btn-start" onclick="startGame()">Try again?</button>
+                <button class="btn-start" onclick="startGame()">Try again?</button>
             </div>
 
         </div>

@@ -12,7 +12,7 @@ frame3.classList.add("hide");
 function startGame() {
 
     frame3.classList.add("hide");
-    count = 0;
+    var count = 0;
     currentCoin = 0;
     userAnswer = null;
     score = 0;
@@ -159,19 +159,18 @@ function countdown() {
 }
 
 function gameover() {
-    document.getElementById("title").textContent = "Game Over!";
     document.getElementById("frame2").classList.add("hide");
     document.getElementById("frame3").classList.remove("hide");
-    document.getElementById("btn-start").textContent = "Restart";
+    document.getElementsByClassName("btn-start").textContent = "Restart";
     document.getElementById("final_score").textContent = "Score: "+score;
     document.getElementById("final_currentCoin").textContent = "Coins: "+currentCoin+"c";
 
-    delete score;
-    delete totalTime;
-    delete time;
-    delete maxTime;
-    delete bonusTime;
-    delete currentCoin;
-    delete count;
+    score = null;
+    totalTime = null;
+    time = null;
+    maxTime = null;
+    bonusTime = null;
+    currentCoin = null;
+    count = null;
     return;
 }
