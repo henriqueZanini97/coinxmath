@@ -55,7 +55,7 @@ The game consist random math question, it starts with five seconds to answer the
 
   - JavaScript Validator
   - No errors were found when passing through the official [Jshint validator](https://jshint.com/)
-  ![image](/assets/images/JShint.png)
+  ![image](/assets/images/js-validator.png)
 
 
 # Deployment
