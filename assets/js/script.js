@@ -12,7 +12,7 @@ frame3.classList.add("hide");
 function startGame() {
 
     frame3.classList.add("hide");
-    currentCoin = 0;
+    var currentCoin = 0;
     userAnswer = null;
     score = 0;
     start = 1;
@@ -35,7 +35,7 @@ function startGame() {
 
 function check() {
 
-    startGame();
+
     let corretAnswer = challenges.answer;
     
     if(score < 0) {
@@ -48,7 +48,7 @@ function check() {
             if(score == 0) { score = 1; } else { score++; }
             time += (maxTime-time);
             
-            currentCoin += score*20;
+            startGame.currentCoin += score*20;
 
         } else {
             //currentCoin -= score*50;
@@ -56,7 +56,7 @@ function check() {
             time--;
         }
 
-        document.getElementById("currentCoin").textContent = currentCoin;
+        document.getElementById("currentCoin").textContent = startGame.currentCoin;
         userAnswer = null;
         challenges = generateMathProblem();
 
@@ -130,7 +130,7 @@ function generateMathProblem() {
     document.getElementById("btn6").innerHTML = (options[5]);
     document.getElementById("problem").textContent = question;
     document.getElementById("result").textContent = " = ? ";
-    document.getElementById("currentCoin").textContent = currentCoin;
+    document.getElementById("currentCoin").textContent = startGame.currentCoin;
 
     return { question, answer, options };
 }
@@ -161,13 +161,13 @@ function gameover() {
     document.getElementById("frame3").classList.remove("hide");
     document.getElementsByClassName("btn-start").textContent = "Restart";
     document.getElementById("final_score").textContent = "Score: "+score;
-    document.getElementById("final_currentCoin").textContent = "Coins: "+currentCoin+"c";
+    document.getElementById("final_currentCoin").textContent = "Coins: "+startGame.currentCoin+"c";
 
     score = null;
     totalTime = null;
     time = null;
     maxTime = null;
     bonusTime = null;
-    currentCoin = null;
+    startGame.currentCoin = null;
     return;
 }

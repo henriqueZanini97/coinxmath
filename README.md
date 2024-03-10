@@ -2,7 +2,7 @@
 
 CoinxMath is a  game that boosts problem-solving, and strategic thinking skills, while reinforcing math concepts like addition, subtraction, and multiplication, they enhance memory, and promote confidence in math abilities, additionally, it stimulates cognitive development and offer accessible, enjoyable ways for learners of all ages to engage with mathematics.
 
-The game consist random math question, it starts with five seconds to answer the question, decreasing one per second until it reaches zero, if the user's answer is wrong the time will reamin as it is, otherwise if the answer is right the time will reset to five seconds.
+The game consist random math question, it starts with five seconds to answer the question, decreasing one per second until it reaches zero, if the user's answer is wrong the time will remain as it is, otherwise if the answer is right the time will reset to five seconds.
 
 ![Responsice Mockup](/assets/images/Mock-up.png)
 
@@ -21,7 +21,7 @@ The game consist random math question, it starts with five seconds to answer the
 - __The Question and Current Question Counter__
   
   - The question section is where the user will be able to see the question, that is picked from the math problem generator.
-  - Additionally, the user can also see the time to answer the question, starts with five seconds, decreasing one per second until it reaches zero, if the user's answer is wrong the time will reamin as it is, otherwise if the answer is right the time will reset to five seconds.
+  - Additionally, the user can also see the time to answer the question, starts with five seconds, decreasing one per second until it reaches zero, if the user's answer is wrong the time will remain as it is, otherwise if the answer is right the time will reset to five seconds.
 
 ![Question and Counter](/assets/images/Counter-question.png)
 
