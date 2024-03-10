@@ -1,8 +1,8 @@
 # __CoinxMath__
 
-CoinxMath is a site-game built for challenge yourself to answer the maximum mathematics problems in 5 seconds, the game end when you do not answer before the clock goes to 0. You can get a lot of coins if you have a good score.
+CoinxMath is a  game that boosts problem-solving, and strategic thinking skills, while reinforcing math concepts like addition, subtraction, and multiplication, they enhance memory, and promote confidence in math abilities, additionally, it stimulates cognitive development and offer accessible, enjoyable ways for learners of all ages to engage with mathematics.
 
-Playing CoinxMath game you improve your brain skills and make you to think faster, you also have a design with coin to  .
+The game consist in math question 
 
 ![Responsice Mockup](/assets/images/Mock-up.png)
 
@@ -37,28 +37,23 @@ Playing CoinxMath game you improve your brain skills and make you to think faste
 ![Game Over Page](/assets/images/Game-over.png)
 
 ### Features Left to Implement
-
+  - Would be a good idea to implement a note with a straightforward explanation about the answer.
+  - The quiz could also have a clickable list with all questions in the game over page so the user could check their answers.
+  - Would be great to have a timer implemented to the quiz, making the quiz more dynamic.
 
 ## Testing
 
  - CSS validator
+ - No errors were found when passing through the official [Jigsaw](https://jigsaw.w3.org/css-validator/) validator.
   ![image](/assets/images/CSS-validator.png)
 
   - HTML Validator
+  - No errors were returned when passing through the official [W3C](https://validator.w3.org/) validator.
   ![image](/assets/images/Html-validator.png)
 
-
-## Validator Testing
-
-- No errors were returned when passing through the official [W3C](https://validator.w3.org/) validator.
-- No errors were found when passing through the official [Jigsaw](https://jigsaw.w3.org/css-validator/) validator
-- JavaScript
-    - No errors were found when passing through the official [Jshint validator](https://jshint.com/)
-      - The following metrics were returned: 
-      - There are 9 functions in this file
-      - Function with the largest signature take 1 arguments, while the median is 0.
-      - Largest function has 8 statements in it, while the median is 6.
-      - The most complex function has a cyclomatic complexity value of 3 while the median is 2.
+  - JavaScript Validator
+  - No errors were found when passing through the official [Jshint validator](https://jshint.com/)
+  ![image](/assets/images/JShint.png)
 
 
 # Deployment

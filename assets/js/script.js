@@ -12,11 +12,11 @@ frame3.classList.add("hide");
 function startGame() {
 
     frame3.classList.add("hide");
-    var count = 0;
+    count = 0;
     currentCoin = 0;
     userAnswer = null;
     score = 0;
-    let start = 0;
+    start = 1;
     time = 5;
     maxTime = time;
     totalTime = time;
@@ -25,7 +25,6 @@ function startGame() {
     frame1.classList.add("hide");
     frame2.classList.remove("hide");
 
-    start = 1;
     challenges = generateMathProblem(); 
     countdown();
     document.getElementById("problem").textContent = challenges.question;
