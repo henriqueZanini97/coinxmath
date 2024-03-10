@@ -2,9 +2,11 @@
 
 CoinxMath is a  game that boosts problem-solving, and strategic thinking skills, while reinforcing math concepts like addition, subtraction, and multiplication, they enhance memory, and promote confidence in math abilities, additionally, it stimulates cognitive development and offer accessible, enjoyable ways for learners of all ages to engage with mathematics.
 
-The game consist in math question 
+The game consist random math question, it starts with five seconds to answer the question, decreasing one per second until it reaches zero, if the user's answer is wrong the time will reamin as it is, otherwise if the answer is right the time will reset to five seconds.
 
 ![Responsice Mockup](/assets/images/Mock-up.png)
+
+- The live link can be found here: [My Site](https://henriquezanini97.github.io/coinxmath/)
 
 ## Features
 
@@ -63,7 +65,7 @@ The game consist in math question
 > From the source section drop-down menu, select the Master Branch
 > Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
-- The live link can be found here: [My Site]()
+- The live link can be found here: [My Site](https://henriquezanini97.github.io/coinxmath/)
 
 ## Credits:
 

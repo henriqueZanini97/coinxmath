@@ -12,7 +12,6 @@ frame3.classList.add("hide");
 function startGame() {
 
     frame3.classList.add("hide");
-    count = 0;
     currentCoin = 0;
     userAnswer = null;
     score = 0;
@@ -36,6 +35,7 @@ function startGame() {
 
 function check() {
 
+    startGame();
     let corretAnswer = challenges.answer;
     
     if(score < 0) {
@@ -56,7 +56,6 @@ function check() {
             time--;
         }
 
-        count++;
         document.getElementById("currentCoin").textContent = currentCoin;
         userAnswer = null;
         challenges = generateMathProblem();
@@ -170,6 +169,5 @@ function gameover() {
     maxTime = null;
     bonusTime = null;
     currentCoin = null;
-    count = null;
     return;
 }
